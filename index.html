@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum | Mariano Ariel Mattos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/site.css">
+</head>
+
+<body onload="loadModal()">
+    <div class="container-fluid">
+        <nav class="navigation">
+            <ul>
+                <li><i class="bi bi-list" onclick="showOrHideNavigarion()"></i></li>
+                <li>
+                    <p id="usuario">Bienvenido nuevo usuario</p>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="menu" id="menu">
+            <ul>
+                <li>
+                    <h2>Navegar hacia</h2>
+                </li>
+                <li>
+                    <i class="bi bi-file-text"></i><a class="link" href="./index.html">Curriculum</a>
+                </li>
+                <li>
+                    <i class="bi bi-envelope-at"></i><a class="link" href="./contact.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main" id="main">
+            <section>
+                <img width="200"
+                    src="https://media.licdn.com/dms/image/C5103AQFMD7y5HROx8Q/profile-displayphoto-shrink_400_400/0/1517627137110?e=1683158400&amp;v=beta&amp;t=UuuSHHCdrjZbeAMkDaOz4hSpdpGpTcF6BFBcgbM6dk8"
+                    height="200" alt="Mariano Ariel Mattos" id="foto">
+                <h2>Mariano Ariel Mattos</h2>
+                <p class="detalle">DESARROLLADOR FRONT END</p>
+                <p class="detalle">Teléfono: 011 1111 2222</p>
+                <p class="detalle">Dirección: Belén de Escobar, Buenos Aires.</p>
+                <p class="detalle">Email: mariano.mattos.developer@gmail.com</p>
+            </section>
+            <section>
+                <h2>Perfil Profesional</h2>
+                <p class="detalle" id="detallePerfil">
+                    Cuento con más de 4 años de experiencia como Desarrollador He colaborado
+                    para empresas como UX y Marina Sur S.A. Me encuentro en búsqueda de una
+                    empresa de primera línea para continuar creciendo en mi carrera como Desarrollador.
+                    Me distingo por mi colaboración en trabajos en equipo, adaptabilidad a los cambios y
+                    autoaprendizaje.
+                </p>
+                <p class="ver-mas" id="botonPerfil" onclick="scrollSection('detallePerfil', 'botonPerfil')">... ver más
+                </p>
+            </section>
+            <section>
+                <h2>Sectores de experiencia</h2>
+                <p class="detalle" id="detalleSectores">
+                    - Desarrollo de Software; 
+                    - Gestión de Proyectos; 
+                    - Logístico; 
+                    - Compras; 
+                    - Planificación de la producción; 
+                    - Ventas; 
+                    - Financiero; 
+                </p>
+                <p class="ver-mas" id="botonSectores" onclick="scrollSection('detalleSectores', 'botonSectores')">...
+                    ver más</p>
+            </section>
+            <section>
+                <h2>Historial Academico</h2>
+                <p class="detalle" id="detalleEstudios">
+                    - ESCUELA DE EDUCACIÓN TÉCNICA
+                    NRO 1 HIPÓLITO BOUCHARD, ESCOBAR
+                    2000 A 2005: 
+                    Técnico Electromecánico. <br />                     
+                    - ESCUELA N°15, ESCOBAR 1995 A 1999; 
+                </p>
+            </section>
+            <section>
+                <h2>Historial Profesional</h2>
+                <p class="detalle" id="detalleProfesional">
+                    - UX | 2016 - 2023: Gestión de Contratos. <br />                     
+                    - MARINA SUR S.A. | 2010 - 2016: Comprador Técnico; 
+                </p>
+            </section>
+
+
+        </main>
+
+        <div class="m-4">
+            <div id="myModal" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <form>
+                                <label>Hola, eres nuevo en este sitio. Quieres decirme quién eres?</p>
+                                    <input type="text" id="nombre" required>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                onclick="noGuardarNombre()">No</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                onclick="guardarNombre()">Si</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./scripts/navigation.js"></script>
+        <script type="text/javascript" src="./scripts/modal.js"></script>
+        <script type="text/javascript" src="./scripts/section.js"></script>
+    </div>
+</body>
+
+</html>
