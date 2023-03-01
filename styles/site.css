@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDF2E9;
+    margin: 0;
+}
+
+html,
+body,
+.container-fluid,
+.menu {
+    height: 100%;
+}
+
+.navigation {
+    position: absolute;
+    z-index: 3;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 52px;
+}
+
+.navigation li {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.bi-list {
+    font-size: 20px;
+}
+
+.menu {
+    width: 260px;
+    float: left;
+    background-color: #F3F3F3;
+    padding: 20px;
+    z-index: 2;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.main {
+    width: 75%;
+    float: left;
+    padding: 20px;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1080px) {
+    .menu {
+        width: 97%;
+        float: left;
+        background-color: #F3F3F3;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .main {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .navigation {
+        position: absolute;
+        z-index: 3;
+    }
+}
+
+section {
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-size: auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #D9D7D4;
+    color: rgba(0, 0, 0, 0.9);
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 8px;
+    overflow-wrap: break-word;
+    overflow-x: visible;
+    overflow-y: visible;
+    position: relative;
+    word-break: break-all;
+}
+
+.detalle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.link {
+    padding-left: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+p {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bi-list,
+.ver-mas {
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    width: 97%;
+    margin-left: 12px;
+}
+
+label {
+    margin-left: 12px;
+}
+
+input[type=submit] {
+    background-color: darkslategray;
+    margin-left: 12px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+input[type=submit]:hover {
+    background-color: darkslategray;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+td,
+th {
+    vertical-align: top;
+}
+
+#foto {
+    border-radius: 50%;
+    height: 152px;
+    width: 152px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
